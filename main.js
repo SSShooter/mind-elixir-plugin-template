@@ -2,8 +2,8 @@ import MindElixir, { E } from 'mind-elixir'
 import { exportSvg, exportPng } from 'mind-elixir/dist/painter'
 import example from 'mind-elixir/dist/example1'
 
-import exportXmind from './index'
-// import exportXmind from '@mind-elixir/export-xmind'
+import pluginName from './index'
+// import pluginName from '@mind-elixir/export-xmind'
 
 const app = document.querySelector('#app')
 app.style.marginTop = '50px'
@@ -55,7 +55,7 @@ const options = {
 }
 
 const mind = new MindElixir(options)
-mind.install(exportXmind)
+mind.install(pluginName)
 const data = MindElixir.new('new topic')
 mind.init(example) // or try `example`
 function sleep() {
