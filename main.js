@@ -1,9 +1,8 @@
 import MindElixir, { E } from 'mind-elixir'
-import { exportSvg, exportPng } from 'mind-elixir/dist/painter'
 import example from 'mind-elixir/dist/example1'
 
 import pluginName from './index'
-// import pluginName from '@mind-elixir/export-xmind'
+// import pluginName from '@mind-elixir/plugin-name'
 
 const app = document.querySelector('#app')
 app.style.marginTop = '50px'
@@ -88,5 +87,3 @@ mind.bus.addListener('expandNode', (node) => {
 window.m = mind
 window.M = MindElixir
 window.E = MindElixir.E
-window.exportSvg = exportSvg
-window.exportPng = exportPng
